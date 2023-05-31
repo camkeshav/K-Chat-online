@@ -9,9 +9,6 @@ import { useEffect } from "react";
 const Chatpage = () => {
     const [fetchAgain, setFetchAgain] = useState(false);
     const { user } = ChatState();
-    useEffect(() => {
-        console.log(user)
-    }, [user])
 
     return (
         <div style={{ width: "100%" }}>

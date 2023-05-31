@@ -4,8 +4,8 @@ const bcrypt = require('bcryptjs')
 const userSchema = mongoose.Schema({
     name: { type: String, required: true },
     email: { type: String, required: true, unique: true },
-    password: { type: String, requiredd: true },
-    profilePicture: { type: String, default: "https://i.stack.imgur.com/l60Hf.png" },
+    password: { type: String, required: true },
+    profilePicture: { type: String, required: true, default: "https://i.stack.imgur.com/l60Hf.png" },
     isAdmin: {
         type: Boolean,
         required: true,

@@ -28,7 +28,7 @@ const ProfileModal = ({ user, children }) => {
                 <ModalOverlay />
                 <ModalContent h="410px">
                     <ModalHeader
-                        fontSize="40px"
+                        fontSize="30px"
                         fontFamily="Work sans"
                         d="flex"
                         justifyContent="center"
@@ -45,7 +45,7 @@ const ProfileModal = ({ user, children }) => {
                         <Image
                             borderRadius="full"
                             boxSize="150px"
-                            src={user.pic}
+                            src={user.profilePicture}
                             alt={user.name}
                         />
                         <Text

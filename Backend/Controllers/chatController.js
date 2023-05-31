@@ -21,7 +21,7 @@ const accessChat = asyncHandler(async (req, res) => {
         ],
     })
         .populate("users", "-password")
-        .populate("latestMessage");
+        .populate("latestMessage")
 
     isChat = await User.populate(isChat, {
         path: "latestMessage.sender",
@@ -65,7 +65,7 @@ const fetchChats = asyncHandler(async (req, res) => {
             .then(async (results) => {
                 results = await User.populate(results, {
                     path: "latestMessage.sender",
-                    select: "name pic email",
+                    select: "name ProfilePicture email",
                 });
                 res.status(200).send(results);
             });
