@@ -105,7 +105,7 @@ const Login = () => {
             >
                 Login as User
             </Button>
-            <Button
+            {/* <Button
                 variant="solid"
                 colorScheme="red"
                 width="100%"
@@ -115,7 +115,7 @@ const Login = () => {
                 }}
             >
                 Login as Guest
-            </Button>
+            </Button> */}
         </VStack>
     );
 };
